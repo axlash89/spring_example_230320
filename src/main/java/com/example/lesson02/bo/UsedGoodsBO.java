@@ -12,7 +12,7 @@ import com.example.lesson02.domain.UsedGoods;
 public class UsedGoodsBO {
 	
 	// 필드
-	@Autowired    // Dependecy Inject (DI) -> 의존성 주입 => Spring bean
+	@Autowired    // Dependency Inject (DI) -> 의존성 주입 => Spring bean
 	private UsedGoodsMapper usedGoodsMapper;
 	
 

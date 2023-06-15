@@ -11,7 +11,6 @@ import com.example.lesson02.domain.UsedGoods;
 
 @RestController
 public class Lesson02Ex01RestController {
-
 	
 	@Autowired
 	private UsedGoodsBO usedGoodsBO;  // DI
