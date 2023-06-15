@@ -14,8 +14,7 @@ public class Lesson01Ex02Controller {
 		// "/WEB-INF/jsp/"
 //		return "/WEB-INF/jsp/lesson01/ex02.jsp";  // jsp 경로
 		return "lesson01/ex02";  // prefix 제거   spring.mvc.view.prefix=/WEB-INF/jsp/
-								// suffix 제거   spring.mvc.view.suffix=.jsp
-		
+								// suffix 제거   spring.mvc.view.suffix=.jsp		
 		
 	}
 	
