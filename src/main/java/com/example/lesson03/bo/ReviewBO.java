@@ -14,8 +14,8 @@ public class ReviewBO {
 	
 	// input : id
 	// output : id에 일치하는 Review 단건 => Controller한테
-	public Review getReviewById(int id) {		
-		return reviewMapper.selectReviewById(id);		
+	public Review getReviewById(int id) {
+		return reviewMapper.selectReviewById(id);
 	}
 	
 	// input : Review

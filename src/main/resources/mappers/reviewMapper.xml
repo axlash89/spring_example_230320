@@ -16,7 +16,7 @@
 			`new_review`
 		WHERE
 			`id` = #{id}
- 	</select>	
+ 	</select>
  	<insert id="insertReview" parameterType="com.example.lesson03.domain.Review">
  		INSERT INTO `new_review`
  		(
