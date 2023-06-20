@@ -17,8 +17,8 @@ public class Lesson03Ex04RestController {
 	@RequestMapping("/lesson03/ex04")
 	public String ex04(
 			@RequestParam("id") int id) {
-		reviewBO.deleteReviewById(id);		
-		return "삭제 완료";
+		reviewBO.deleteReviewById(id);
+		return "<h1>삭제 완료</h1>";
 	}
 	
 }
