@@ -25,7 +25,7 @@ public class Lesson04Ex02Controller {
 	}
 	
 	// 학생 추가 => 방금 가입된 학생 정보 페이지
-	@PostMapping("/add_student") 
+	@PostMapping("/add_student")
 	public String addStudent(
 			@ModelAttribute Student student,  // jsp name 속성명과 필드명이 일치하는 곳에 세팅된다.
 			Model model) {
@@ -38,7 +38,8 @@ public class Lesson04Ex02Controller {
 		Student latestStudent = studentBO.getStudentById(student.getId());
 		model.addAttribute("result", latestStudent);
 		
-		return "lesson04/afterAddStudent";		
+		return "lesson04/afterAddStudent";
+		
 	}
 	
 }
