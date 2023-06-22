@@ -43,6 +43,7 @@ public class Lesson05Controller {
 		user.put("age", 60);
 		user.put("hobby", "골프");
 		users.add(user);
+		
 		model.addAttribute("users", users);
 		
 		return "lesson05/ex02";

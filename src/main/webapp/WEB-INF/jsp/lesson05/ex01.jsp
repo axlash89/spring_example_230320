@@ -12,7 +12,7 @@
 	<h1>1. 변수 정의하기 (c:set)</h1>
 	
 	<c:set var="number1" value="100"/>
-	<!-- variable -->
+	<!-- var <- variable 약자 -->
 	<c:set var="number2">250</c:set>
 	
 	<%-- JSP 주석 --%>
