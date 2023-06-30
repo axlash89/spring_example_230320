@@ -35,13 +35,13 @@ public class Lesson06Ex01Controller {
 		userBO.addUser(name, yyyymmdd, email, introduce);
 		
 		//return String
-		return "성공";
+		return "성공";  // httpMessageConverter가 동작
 	}
 	
 	// 입력 성공 페이지
 	@GetMapping("/after_add_user_view")
 	public String afterAddUserView() {
-		return "lesson06/afterAddUser";
+		return "lesson06/afterAddUser";  // 이건 viewResolver가 동작
 	}
 	
 }

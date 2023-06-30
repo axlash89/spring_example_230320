@@ -47,11 +47,11 @@
 			let name = $('#name').val().trim();
 			if (name == '') {
 				alert("이름을 입력하세요");
-				return false;  // submit 안함, submit 이벤트일 때 return false
+				return false;  // (submit 안함), submit 이벤트일 때 return false를 반드시 하기!
 			}
 			
 			let yyyymmdd = $('#yyyymmdd').val().trim();
-			if (!yyyymmdd) {
+			if (!yyyymmdd) {  // yyyymmdd.length < 1 이렇게 해도 됨.
 				alert("생년월일을 입력하세요");
 				return false;
 			}
@@ -61,7 +61,7 @@
 		}); */
 		
 		// 2. jquery의 ajax통신 이용하기
-		$('#joinBtn').on('click', function() {
+		 $('#joinBtn').on('click', function() {
 			
 			// validation
 			let name = $('#name').val().trim();
@@ -112,9 +112,9 @@
 				
 			});
 			
-		});
+		}); 
 	});
-</script>	
+</script>
 
 </body>
 </html>
