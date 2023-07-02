@@ -31,7 +31,7 @@
 				<textarea id="introduce" name="introduce" class="form-control col-3"></textarea>
 			</div>
 			<!-- AJAX 통신으로 호출할 때는 반드시 버튼을 button 타입으로 지정한다. (form 3종세트 동작 안하도록!) -->
-			<!-- <input type="submit" class="btn btn-info" value="회원가입"> -->
+			<!-- <input type="submit" class="btn btn-info" value="회원가입">  -->
 			<input type="button" id="joinBtn" class="btn btn-info" value="회원가입">
 		</form>
 	</div>
@@ -61,7 +61,7 @@
 		}); */
 		
 		// 2. jquery의 ajax통신 이용하기
-		 $('#joinBtn').on('click', function() {
+		$('#joinBtn').on('click', function() {
 			
 			// validation
 			let name = $('#name').val().trim();
@@ -112,7 +112,7 @@
 				
 			});
 			
-		}); 
+		});
 	});
 </script>
 

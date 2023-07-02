@@ -19,9 +19,9 @@
 			<label for="name"><b>이름</b></label>
 			<div class="d-flex">
 				<input type="text" id="name" class="form-control col-3" placeholder="이름을 입력하세요">
-				<button type="button" id="nameCheckBtn" class="btn btn-warning">중복확인</button>
+				<button id="nameCheckBtn" class="btn btn-warning">중복확인</button>
 			</div>
-			<small id="nameStatusArea"></small>
+			<small id="nameStatusArea"></small><small>&nbsp</small>
 		</div>
 		
 		<input type="button" id="joinBtn" class="btn btn-info" value="회원가입">
@@ -51,7 +51,7 @@
 					// request
 					type:"get"  // get일 때는 생략 가능
 					, url:"/lesson06/ex02/is_duplication"
-					, data:{"name":name}					
+					, data:{"name":name}
 					
 					// response
 					, success:function(data) {
