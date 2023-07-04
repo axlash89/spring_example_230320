@@ -9,8 +9,7 @@ import com.example.lesson07.entity.StudentEntity;
 public interface StudentRepository extends JpaRepository<StudentEntity, Integer> {
 														// < entity , pk의 타입 >
 	// Spring Data JPA
-	// save()
-	
+	// save()	
 	// findById()
 	
 }

@@ -37,7 +37,7 @@ public class Lesson07Ex01RestController {
 	public StudentEntity update() {
 		
 		// id가 5번인 dreamJob을 변경 => "검사"
-		StudentEntity student = studentBO.updateStudentDreamJobById(5, "검사");
+		StudentEntity student = studentBO.updateStudentDreamJobById(2, "검사");
 		
 		return student;
 		
