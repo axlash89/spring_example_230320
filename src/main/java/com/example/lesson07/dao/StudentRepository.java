@@ -1,6 +1,10 @@
 package com.example.lesson07.dao;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.example.lesson07.entity.StudentEntity;
@@ -9,7 +13,43 @@ import com.example.lesson07.entity.StudentEntity;
 public interface StudentRepository extends JpaRepository<StudentEntity, Integer> {
 														// < entity , pk의 타입 >
 	// Spring Data JPA
+	
+	// JPQL => Entity한테 요청한다.
+		
 	// save()	
-	// findById()
+	// findById(id)
+	// delete(객체);
+	// findAll();
+	
+	public List<StudentEntity> findAllByOrderByIdDesc();
+	
+	public List<StudentEntity> findTop2ByOrderByIdDesc();
+	
+	public List<StudentEntity> findByName(String name);
+	
+	public List<StudentEntity> findByNameIn(List<String> names);
+	
+	public List<StudentEntity> findByNameAndDreamJob(String name, String dreamJob);
+	
+	public List<StudentEntity> findByEmailContaining(String email);
+	
+	public List<StudentEntity> findByNameStartingWith(String surName);
+	
+	public List<StudentEntity> findByIdBetween(int start, int end);
+	
+	
+	
+	// JPQL 직접 작성     // ↓ entity			   ↓ as st
+	@Query(value = "select st from new_student st where st.dreamJob = :dreamJob")						
+	
+	
+	// native query => DB쿼리문으로 직접 수행
+//	@Query(value = "select * from new_student where dreamJob=:dreamJob", nativeQuery =true)
+	public List<StudentEntity> findByDreamJob(@Param("dreamJob") String dreamJob);
+	// import할때 springframework에 있는 것을 import
+	
+	
+		
+	
 	
 }

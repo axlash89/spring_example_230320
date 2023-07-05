@@ -43,4 +43,16 @@ public class Lesson07Ex01RestController {
 		
 	}
 	
+	// D:Delete
+	@GetMapping("/3")
+	public String delete() {
+		
+		// id:2
+		studentBO.deleteStudentById(2);
+		
+		return "삭제 완료";
+		
+	}
+	
+	
 }

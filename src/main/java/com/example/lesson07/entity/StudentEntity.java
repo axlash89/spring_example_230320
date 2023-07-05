@@ -24,7 +24,7 @@ import lombok.ToString;
 @Builder(toBuilder = true)  // <- setter의 대용  (toBuilder = true) 추가하면 ex) dreamJob 하나만 바꿀 수도 있음.
 @Getter  // 말그대로 getter
 @Table(name = "new_student")  // 테이블명에 언더바가 붙어있을때 꼭 추가한다.
-@Entity  // 이 클래스는 Entity다
+@Entity(name = "new_student")  // 이 클래스는 Entity다
 public class StudentEntity {
 
 	@Id  // pk
