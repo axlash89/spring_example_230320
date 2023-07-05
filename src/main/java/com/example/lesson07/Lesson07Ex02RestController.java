@@ -34,7 +34,7 @@ public class Lesson07Ex02RestController {
 //		return studentRepository.findByName("액슬로즈");
 		
 		// 5) in문으로 일치하는 값 모두 조회
-//		return studentRepository.findByNameIn(Arrays.asList("액슬로즈", "김성민"));
+//		return studentRepository.findByNameIn(Arrays.asList("조세호", "유재석"));
 		
 		// 6) 여러 컬럼값과 일치하는 데이터 조회
 //		return studentRepository.findByNameAndDreamJob("액슬로즈", "가수");

@@ -44,7 +44,7 @@ public interface StudentRepository extends JpaRepository<StudentEntity, Integer>
 	
 	
 	// native query => DB쿼리문으로 직접 수행
-//	@Query(value = "select * from new_student where dreamJob=:dreamJob", nativeQuery =true)
+//	@Query(value = "select * from new_student where dreamJob=:dreamJob", nativeQuery=true)
 	public List<StudentEntity> findByDreamJob(@Param("dreamJob") String dreamJob);
 	// import할때 springframework에 있는 것을 import
 	
